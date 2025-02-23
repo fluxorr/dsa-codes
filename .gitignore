@@ -1,0 +1,15 @@
+*.bin
+*.out
+*.exe
+.cph
+.vscode
+
+
+
+
+*.o
+*.obj
+
+
+
+
