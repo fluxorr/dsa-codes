@@ -3,14 +3,16 @@
 using namespace std;
 
 int main(){
-   string a ,b;
-   cin >> a >> b;
-   
+  int a; 
+  cout << "Enter the number ";
+  cin >> a;
+  cout << "The number is " << a << endl;
 
-   int x = a[a.size() - 1 ] - '0'; int y = b[b.size() - 1] - '0' ; 
+  while(a>10){
+    a = a / 10;
+  }
 
-   cout << x + y << endl;
+  cout << "now " << a << endl;
 
-    return 0;
   }
 
