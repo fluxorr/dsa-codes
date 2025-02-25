@@ -2,17 +2,21 @@
 #include <string>
 using namespace std;
 
+bool check(int a, int b, int c, int d) {
+    return (a + b + c == d) || (a * b * c == d) ||
+           (a + b - c == d) || (a - b + c == d) || (a - b - c == d) ||
+           (a * b + c == d) || (a + b * c == d) ||
+           (a * b - c == d) || (a - b * c == d);
+}
+
 int main(){
-  int a; 
-  cout << "Enter the number ";
-  cin >> a;
-  cout << "The number is " << a << endl;
+     int a = 34688642, b = -851839419, c = 395784949, d = 490743112;
 
-  while(a>10){
-    a = a / 10;
-  }
+    if (check(a, b, c, d))
+        cout << "YES\n";
+    else
+        cout << "NO\n";
 
-  cout << "now " << a << endl;
-
+    return 0;
   }
 
